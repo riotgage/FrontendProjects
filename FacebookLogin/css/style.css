@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+    margin:0px;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Lato',Helvetica, Arial, sans-serif;
+}
+label{
+    color:white;
+    display:block;
+
+}
+
+.text-blue{
+    color:#1877f2;
+}
+.container{
+    max-width: 1000px;
+    width:100%;
+    margin:0 auto;
+}
+
+.btn{
+    padding:12px 4px;
+    font-weight: 600;
+    border:none;
+    border-radius: 10px;
+}
+
+.btn-login{
+    color:white;
+    font-size: 22px;
+    background-color: #1877f2;
+    width: 100%;
+}
+
+.btn-green{
+    color:white;
+    background-color: #42B72A;
+
+}
+.line{
+    height:2px;
+    background-color: #dadde1;
+    width: 100%;
+    text-align: center;
+}
+.showcase{
+    height:70vh;
+    background-color:#f0f2f5;
+}
+
+.showcase-container{
+    display:flex;
+    height:100%;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo{
+    width:70%;
+}
+.logo img{
+    width: 301.06px;
+    height: 106px;
+}
+
+.logo h2{
+    color: #1c1e21;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 70%;
+}
+
+.login-form{
+    width: 40%;
+    display:flex;
+    background-color: #fff;
+    padding:20px;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.login-form input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border:1px solid #dddfe2;
+    color: #1d2129;
+    line-height: 16px;
+    font-size: 17px;
+    padding: 14px 16px;
+    outline: none;
+    margin:10px 0;
+
+}
+
+.login-form a{
+    text-decoration: none;
+    font-size: 16px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.btn-crate-account{
+    width:70%;
+}
+
+@media (max-width:1080px) {
+    .showcase-container{
+        margin: 0 40px;
+    }
+    .logo h2{
+        font-size:24px;
+    }
+}
+
+@media (max-width:768px) {
+    .showcase{
+        height: 80vh;
+    }
+    .showcase-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+    }
+    .logo {
+        text-align: center;
+        width: 100%;
+    }
+    .logo h2{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .login-form{
+        width: 70%;
+        margin:20px auto;
+    }
+}
