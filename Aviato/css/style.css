@@ -485,3 +485,106 @@ h1,h2,h3{
     border:none;
     cursor: pointer;
 }
+
+/* Media Queries */
+
+@media (max-width:600px){
+    html{
+        font-size: 50%;
+    }
+
+    .navbar .nav-items, .navbar .logo{
+        float:none;
+        display:block;
+        width:100%;
+        text-align: center;
+    }
+
+    .header-content .main-heading{
+        display:none;
+    }
+
+    .row{
+        height:auto;
+        width:100%;
+
+    }
+
+    .row .img-box,
+    .row .txt-box,
+    .features .box,
+    .about .left,
+    .about .right,
+    .banner-left,
+    .banner-right,
+    .form-wrapper .company-address,
+    .form-wrapper .form{
+        float:none;
+        width:100%;
+        text-align: center;
+    }
+
+    .form-wrapper .company-address{
+        margin-bottom:5rem;
+        height:auto;
+    }
+
+    .form-wrapper .form{
+        text-align: left;
+    }
+
+
+}
+
+
+@media (min-width:601px) and (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    p{
+        font-size:1.8rem;
+    }
+
+    .navbar .nav-items, .navbar .logo{
+        float:none;
+        display:block;
+        width:100%;
+        text-align: center;
+    }
+
+    .row{
+        height:auto;
+        width:100%;
+
+    }
+
+    .row .img-box,
+    .row .txt-box,
+    .features .box,
+    .about .left,
+    .about .right,
+    .banner-left,
+    .banner-right,
+    .form-wrapper .company-address,
+    .form-wrapper .form{
+        float:none;
+        width:100%;
+        text-align: center;
+    }
+
+    .form-wrapper .company-address{
+        margin-bottom:5rem;
+        height:auto;
+    }
+
+    .form-wrapper .form{
+        text-align: left;
+    }
+
+}
+
+@media (min-width:769px) and (max-width:1200px){
+    html{
+        font-size:56.25%;
+    }
+}
