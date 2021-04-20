@@ -27,30 +27,37 @@ a{
 }
 
 h1{
-    font-size:4em;
+    font-size:3em;
     text-align: center;
-    margin:2rem;
-    font-family: 'RocknRoll', sans-serif;
+    margin:4rem auto;
+    width:100%;
+    font-weight: 700;
+    max-width:800px;
 }
 
 h2{
-    font-size:3em;
+    font-size:2em;
     text-align: center;
-    margin:2rem;
+    margin:2rem auto 5rem;
+    width:100%;
+    max-width:800px;
 }
 
 .btn{
     display:block;
     border:1px solid white;
     padding:1.5rem 2.5rem;
+    background:white;
+    color: blue;
     border-radius: 10px;
 }
 
 
 .projects-container{
+    
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-    grid-gap:10px;
+    grid-gap:2rem;
     margin:20px;
 }
 
@@ -58,7 +65,8 @@ h2{
     display:flex;
     flex-direction:column;
     align-items: center;
-    background: #903749;
+    background: #2a64e0;
+    padding:0.7rem;
 }
 
 .project-desc{
