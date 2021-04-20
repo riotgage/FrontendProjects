@@ -45,16 +45,17 @@ h2{
 
 .btn{
     display:block;
-    border:1px solid white;
+    border:1px solid blue;
     padding:1.5rem 2.5rem;
-    background:white;
+    background:rgb(255, 255, 255);
     color: blue;
     border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 
 
 .projects-container{
-    
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
     grid-gap:2rem;
@@ -65,11 +66,49 @@ h2{
     display:flex;
     flex-direction:column;
     align-items: center;
-    background: #2a64e0;
+    background: #2a64e071;
     padding:0.7rem;
 }
 
 .project-desc{
     text-align: center;
     font-size: 1.7rem;
+}
+
+.project-title{
+    font-family: 'RocknRoll One', sans-serif;
+    font-size:2.5rem;
+}
+.circle{
+    border-radius: 50%;
+    height:200px;
+    width:200px;
+    position:fixed;
+    z-index:-1;
+    
+    background: rgba(255, 255, 255, 0.192);
+}
+
+.circle1{
+    left:15%;
+    top:5%;
+}
+
+.circle2{
+    right:15%;
+    top:25%;
+}
+
+.circle3{
+    right:40%;
+    top:-5%;
+}
+.circle4{
+    left:65%;
+    bottom:20%;
+}
+
+.circle5{
+    left:15%;
+    bottom:-10%;
 }
