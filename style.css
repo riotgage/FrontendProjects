@@ -27,12 +27,14 @@ a{
 }
 
 h1{
-    font-size:3em;
+    font-size:4em;
     text-align: center;
     margin:4rem auto;
     width:100%;
     font-weight: 700;
     max-width:800px;
+    font-family: 'RocknRoll One', sans-serif;
+
 }
 
 h2{
@@ -52,9 +54,14 @@ h2{
     border-radius: 10px;
     letter-spacing: 1px;
     font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top:2rem;
 }
 
-
+.line{
+    border:2px solid blue;
+}
 .projects-container{
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
@@ -79,13 +86,18 @@ h2{
     font-family: 'RocknRoll One', sans-serif;
     font-size:2.5rem;
 }
+.project-title::after{
+    display:block;
+    content: "";
+    margin-top:1rem;
+    border-bottom: 2px solid blue;;
+}
 .circle{
     border-radius: 50%;
     height:200px;
     width:200px;
     position:fixed;
     z-index:-1;
-    
     background: rgba(255, 255, 255, 0.192);
 }
 
