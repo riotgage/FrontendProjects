@@ -47,7 +47,7 @@ h2{
 
 .btn{
     display:block;
-    border:1px solid blue;
+    border:1px solid rgb(17, 17, 122);
     padding:1.5rem 2.5rem;
     background:rgb(255, 255, 255);
     color: blue;
@@ -60,7 +60,7 @@ h2{
 }
 
 .line{
-    border:2px solid blue;
+    border:2px solid rgb(17, 17, 122);
     width: 100%;
 }
 .projects-container{
