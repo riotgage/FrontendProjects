@@ -40,7 +40,7 @@ h1{
 h2{
     font-size:2em;
     text-align: center;
-    margin:2rem auto 5rem;
+    margin:2rem auto 5rem auto;
     width:100%;
     max-width:800px;
 }
@@ -61,12 +61,12 @@ h2{
 
 .line{
     border:2px solid blue;
+    width: 100%;
 }
 .projects-container{
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
     grid-gap:2rem;
-    margin:20px;
 }
 
 .project{
@@ -123,4 +123,16 @@ h2{
 .circle5{
     left:15%;
     bottom:-10%;
+}
+
+@media (max-width:768px){
+    .projects-container{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+    html{
+        font-size:8px;
+    }
+    .project{
+        margin:0 20px;
+    }
 }
