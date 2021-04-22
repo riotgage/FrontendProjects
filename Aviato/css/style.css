@@ -588,3 +588,18 @@ h1,h2,h3{
         font-size:56.25%;
     }
 }
+
+.tutorial {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.tutorial h2{
+    display:block;
+
+}
+.tutorial i{
+    color:red;
+    margin:0 20px;
+
+}

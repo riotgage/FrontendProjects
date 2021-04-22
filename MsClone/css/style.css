@@ -331,3 +331,17 @@ ul{
         margin-bottom:20px;
     }
 }
+.tutorial {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.tutorial h2{
+    display:block;
+
+}
+.tutorial i{
+    color:red;
+    margin:0 20px;
+
+}

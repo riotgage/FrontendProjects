@@ -17,7 +17,6 @@ body{
     margin:10px 0;
     color: white;
 }
-
 .para{
     margin:20px 0;
     color: #646363;
@@ -32,7 +31,11 @@ body{
 ul{
     margin:0;
     padding: 0;
+}
 
+a{
+    text-decoration: none;
+    color:white;
 }
 .container{
     width:80%;
@@ -233,3 +236,21 @@ footer{
     
     }
 }
+
+.tutorial {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:10px;
+
+}
+.tutorial h3{
+    display:block;
+    color:white;
+
+}
+.tutorial i{
+    color:white;
+    margin:0 20px;
+}
+

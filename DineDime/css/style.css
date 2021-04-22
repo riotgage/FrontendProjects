@@ -606,3 +606,22 @@ body{
         height:50vmax;
     }
 }
+
+
+.tutorial {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: rgb(65,65,65);
+}
+.tutorial h3{
+    display:block;
+    color:white;
+    font-size:2rem;
+
+}
+.tutorial i{
+    color:red;
+    margin:0 20px;
+
+}
