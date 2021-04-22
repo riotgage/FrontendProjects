@@ -113,9 +113,10 @@ header{
   }
 
   header .text-content{
-	width: 40%;
+	width: 100%;
 	margin: 100px 0 0 50px ;
-	justify-self: center;
+	display: flex;
+	justify-content: space-between;
   }
 
 
@@ -127,9 +128,14 @@ header{
   .text-content p{
 	font-size: 20px;
 	margin-top: 10px;
+	width: 50%;
 	color: rgb(211, 201, 201);
   }
 
+  .text-content img{
+	  width:35%;
+	  transform: translateX(-10%);
+  }
   .text-content .buttons input{
 	  margin:40px 0;
   }
@@ -149,6 +155,13 @@ header{
 	}
 	header .text-content h2{
 	  font-size: 35px;
+	}
+	.text-content img{
+		display: none;
+	}
+
+	.text-content p{
+		width: 90%;
 	}
 }
 @media (max-width:410px) {
