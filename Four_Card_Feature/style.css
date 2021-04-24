@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    --Very_Dark_Blue: hsl(234, 12%, 34%);
+    --Grayish_Blue: hsl(229, 6%, 66%);
+    --Very_Light_Gray: hsl(0, 0%, 98%);
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size:62.5%;
+}
+.txt-gray{
+    color:var(--Grayish_Blue);
+}
+
+.txt-blue{
+    color:var(--Very_Dark_Blue);
+}
+
+.ft-200{
+    font-weight:200;
+
+}
+
+.ft-600{
+    font-weight:600;
+
+}
+
+.container{
+    max-width: 80rem;
+    width:90%;
+    margin:20% auto;
+
+}
+h1{
+    text-align: center;
+    font-size:2rem;
+    margin:.5rem 0;
+}
+
+p{
+    text-align: center;
+    font-size:1.2rem;
+    margin:20px 0;
+    color:var(--Grayish_Blue)
+}
+
+.projects{
+    margin:4rem 1rem;
+    display:grid;
+    grid-gap:2rem;
+}
+
+.project{
+    border-radius:10px;
+    padding:1.4rem;
+    display: flex;
+    flex-direction:column;
+    box-shadow: 1px 10px 5px 5px rgba(233,233,233,0.69);
+
+}
+
+.project h2{
+    margin:1rem 0 0;
+    font-weight: 600;
+    font-size:1.7rem;
+    color:var(--Very_Dark_Blue)
+}
+
+.project p{
+    margin:1rem 0 3.5rem 0;
+    text-align:left;
+    font-size:1.1rem;
+}
+
+.project img{
+    align-self:flex-end;
+    width:50px;
+}
+.project1{
+    border-top:4px solid var(--Cyan) ;
+}
+
+.project2{
+    border-top:4px solid var(--Red) ;
+}
+
+.project3{
+    border-top:4px solid var(--Orange) ;
+}
+
+.project4{
+    border-top:4px solid var(--Blue );
+}
+
+
+@media  (min-width:850px){
+    html{
+        font-size:13px;
+    }
+    .container{
+        margin:8% auto;
+    }
+
+    .projects{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+    }
+
+    .project1,.project3{
+        grid-row:span 2;
+        align-self: center;
+    }
+    .project p{
+        margin:1rem 0 3rem 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
