@@ -54,7 +54,8 @@ h1{
 p{
     text-align: center;
     font-size:1.2rem;
-    margin:20px 0;
+    margin:20px auto;
+    max-width:50rem;
     color:var(--Grayish_Blue)
 }
 
@@ -127,6 +128,9 @@ p{
     }
     .project p{
         margin:1rem 0 3rem 0;
+    }
+    .project h2{
+        font-size: 1.5rem;
     }
 }
 
