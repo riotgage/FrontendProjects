@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Practice | HomePage</title>
     <link rel="stylesheet" href="style.css">
+
+   
 </head>
 <body>
     <h1>Project Directory</h1>
+    <h2 id="count">Projects Count: </h2>
     <div class="line"></div>
     <h2>These projects are mostly based on HTML/CSS concepts , very little JS and without any help of framework.</h2>
     <div class="circle circle1"></div>
@@ -52,7 +55,7 @@
             <div class="project">
                 <h2 class="project-title">Microsoft HomePage Clone</h2>
                 <p class="project-desc"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem quod voluptates, nesciunt quae laudantium asperiores modi est praesentium molestiae beatae ipsa sit magnam quam odit! Consequuntur tenetur rerum maiores. Officiis voluptatum modi porro libero illum ea debitis sunt repellat atque.</p>
-                <a href="./MsClone/" class="btn btn-secondary project-link">Go to MS Homepage Login</a>
+                <a href="./MsClone/" class="btn btn-secondary project-link">Go to MS Homepage</a>
             </div>
             <div class="project">
                 <h2 class="project-title">Horizon</h2>
@@ -87,5 +90,12 @@
             </div>
         
     </section>
+
+    <script>
+        var count=document.querySelectorAll('.project').length;
+        var ProjectCount=document.getElementById("count");
+        ProjectCount.innerHTML+=count;
+        console.log(count);
+    </script>
 </body>
 </html>
