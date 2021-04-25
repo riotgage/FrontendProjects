@@ -57,6 +57,7 @@ h2{
     text-transform: uppercase;
     font-size: 1.5rem;
     margin-top:2rem;
+    justify-self:flex-end;
 }
 
 .line{
@@ -75,6 +76,7 @@ h2{
     align-items: center;
     background: #2a64e071;
     padding:0.7rem;
+    height:100%;
 }
 
 .project-desc{
