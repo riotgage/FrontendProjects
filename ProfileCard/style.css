@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --Dark_cyan: hsl(185, 75%, 39%);
+    --dark_blue: hsl(229, 23%, 23%);
+    --grayish_blue: hsl(227, 10%, 46%);
+    --gray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: var(--Dark_cyan);
+    background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+    background-position: left -45% top -660%, 140% 600%;
+    background-repeat: no-repeat no-repeat;
+    height: 100vh;
+    position: relative;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+html{
+    font-size:10px;
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    margin:20px;
+}
+.line{
+    width:100%;
+    height:1px;
+    background-color:var(--gray);
+}
+.card{
+    width:34rem;
+    background: white;
+    height:36rem;
+    border-radius: 10px;
+    margin: auto;
+    z-index:1;
+    box-shadow: -5px 4px 25px 6px rgba(67,180,192,0.75);
+
+
+}
+.card .back{
+    background: url("./images/bg-pattern-card.svg");
+    height:12rem;
+    width: 100%;
+}
+.card img{
+    border-radius:50%;
+    display:block;
+    padding:1rem;
+    background-color:white;
+    margin:0 auto;
+}
+
+.card h2{
+    display:inline;
+    text-align: center;
+    font-size:1.8rem;
+    margin:2rem auto 1rem;
+    color: var(--dark_blue);
+}
+.card h2 span{
+    color:var(--gray);
+    font-weight: 400;
+}
+.card p{
+    text-align: center;
+    margin:0 0 2rem 0;
+    font-size:1.3rem;
+    color:var(--gray);
+
+}
+
+.card-text{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    transform:translateY(-5rem);
+
+}
+
+.stats{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+    margin:2rem 0;
+}
+
+.stat h3{
+    text-align: center;
+    margin:1rem 0;
+    font-size:1.7rem;
+}
+
+.stat p{
+    font-size:1.1rem;
+    font-weight: 400;
+}
+
+.backtop,.backdown{
+    position:absolute;
+    width: 100%;
+    height:100vh;
+    
+}
+
+.backtop{
+    background: url(./images/bg-pattern-top.svg) no-repeat;
+    top:-30%;
+    left:-20%;
+}
+
+.backdown{
+    background: url(./images/bg-pattern-top.svg) no-repeat;
+    bottom:-60%;
+    right:60%;
+}
+.attribution { font-size: 11px; text-align: center; margin: 2rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
