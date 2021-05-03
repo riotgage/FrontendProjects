@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size:62.5%;
+}
+body{
+    height:100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: var(--violet);
+
+
+}
+
+.container{
+    height:100%;
+    background:url('./images/bg-desktop.svg') no-repeat center center/cover;
+}
+
+i:hover{
+    color:var(--soft-magenta);
+    border:1px solid var(--soft-magenta);
+    border-radius:50%;
+}
+
+i{
+    color:white;
+    padding:1rem;
+
+}
+
+.btn{
+    padding:1.1rem 4.5rem;
+    background:white;
+    color:var(--violet);
+    text-decoration: none;
+    border-radius:25px;
+    font-size:1.5rem;
+    align-self:flex-start;
+}
+
+.btn:hover{
+    background:var(--soft-magenta);
+    color:white;
+
+}
+.nav{
+    padding:5rem 10rem;
+}
+.nav img{
+    width:180px;
+}
+
+.card{
+    margin:10rem auto;
+    display:flex;
+    max-width: 1700px;
+    align-self:center;
+}
+
+.card img{
+    min-width:450px;
+    width:40%;
+    align-self: center;
+}
+.content-text{
+    width:30%;
+    display:flex;
+    margin:3rem 10rem;
+    flex-direction: column;
+}
+
+.content-text h2{
+    font-size:3.5rem;
+    color:white;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.content-text p{
+    font-size:1.6rem;
+    color:white;
+    margin-bottom: 3rem;
+
+}
+.links{
+    display:flex;
+    justify-content:flex-end;
+    margin:0 5rem;
+}
+.links i{
+    padding:1rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color:white;
+}
+.attribution a { 
+    color:aqua;
+}
+
+
+@media (max-width:1100px){
+    .content-text{
+        width:100%;
+        margin:3rem 1rem 3rem 4rem;
+    }
+
+    .content-text p{
+        font-size:1.4rem;
+        text-align: center;
+
+    }
+
+    .content-text h2{
+        font-size:3rem;
+        text-align: center;
+
+    }
+}
+
+@media (max-width:768px){
+    .card{
+        flex-direction:column;
+        margin-bottom:0rem;
+    }
+
+    .card img{
+        min-width:400px;
+    }
+    .content-text{
+        width:80%;
+        margin:6rem auto;
+    }
+    .content-text p{
+        font-size:1.6rem;
+
+    }
+    .btn{
+        align-self: center;
+        padding: 1.1rem 8.5rem;
+        font-size:1.6rem;
+    }
+    .container{
+        background:url('./images/bg-mobile.svg') no-repeat ;
+        background-position: top;
+        background-size:contain;
+    }
+    .links{
+        justify-content: center;
+    }
+    
+    
+}
