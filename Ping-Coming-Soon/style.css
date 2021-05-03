@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --Very-dark-blue: hsl(209, 33%, 12%);
+}
+
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    height: 100vh;
+    font-family: "Libre Franklin", sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+::placeholder { 
+    color: var(--gray);
+    opacity: 1;
+}
+
+
+.logo {
+    margin: 6rem auto 4rem;
+}
+
+h1 {
+    font-size: 40px;
+    color: var(--gray);
+    font-weight: 300;
+    margin: 1rem;
+}
+h1 span {
+    color: var(--Very-dark-blue);
+    font-weight: 600;
+}
+
+p {
+    font-size: 20px;
+    color: var(--Very-dark-blue);
+    font-weight: 300;
+    margin: 1rem;
+}
+
+input[type=email]{
+    padding:1.8rem 2.5rem;
+    font-size:1.6rem;
+    margin:10px 0;
+    border: 1px solid var(--gray);
+    border-radius:30px;
+    width:40rem;
+}
+
+input:focus{
+    outline: none;
+}
+
+.btn{
+    text-decoration: none;
+    color:white;
+    background: var(--blue);
+    padding:1.8rem 5.5rem;
+    margin:1rem;
+    font-size:1.5rem;
+    border: 1px solid var(--pale-blue);
+    border-radius:30px;
+    font-weight: 600;
+    box-shadow:0 0 15px 4px var(--pale-blue);
+
+}
+
+.dashboard{
+    width:550px;
+    margin:5rem auto;
+}
+
+.links{
+    display:flex;
+}
+
+.links i{
+    margin:auto 1.5rem;
+    color:var(--blue);
+    border:.5px solid var(--pale-blue);
+    border-radius:50%;
+    padding:1rem;
+    font-size:1.7rem;
+}
+.links i:hover{
+    background:var(--blue);
+    color:white;
+    
+}
+
+.copyright{
+    text-align:center;
+    margin:2rem;
+    font-size:1.3rem;
+    color:var(--gray);
+}
+
+#message{
+    color:var(--light-red);
+    font-size:1.4rem;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width:675px) {
+    input[type=email]{
+        display:block;
+    }
+
+    .btn{
+        display:block;
+        margin:1rem auto;
+        width:100%;
+    }
+}
