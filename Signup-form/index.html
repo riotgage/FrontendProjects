@@ -8,35 +8,43 @@
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-  Learn to code by watching others
+  <div class="container">
+    <div class="signup-container">
+      <div class="text-container">
+		<h1>
+			Learn to code by watching others
+		</h1>
+		<p>
+			See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+			but understanding how developers think is invaluable.
+		</p>
+      </div>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+      <div class="form-container">
+		<h3 class="banner">Try it free 7 days then $20/mo. thereafter</h3>
 
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+		<form action="#">
+			<input type="text" name="first" id="first" placeholder="First Name" required>
+			<input type="text" name="last" id="last" placeholder="Last Name" required>
+			<input type="email" name="email" id="email" placeholder="Email Address" required>
+			<input type="password" name="pass" id="pass" placeholder="Password" required>
+			<input type="submit" value="CLAIM YOUR FREE TRIAL" class="btn">
+			<p>By clicking the button, you are agreeing to our <span class="terms">Terms and Services</span> </p>
+		</form>
+      </div>
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/riotgage">Riotgage</a>.
+      </p>
+    </footer>
+  </div>
+ 
 </body>
 </html>

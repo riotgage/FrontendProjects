@@ -103,5 +103,5 @@ ul li{
     font-size:1.2rem;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 11px; text-align: center;  color:var(--cyan);}
+.attribution a { color: var(--gray-blue); text-decoration: none;}

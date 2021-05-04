@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --gray-blue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: var(--red);
+}
+
+.container {
+  height: 100%;
+  background: url("./images/bg-intro-desktop.png");
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner {
+  color: white;
+  background: var(--blue);
+  margin: 1rem 0;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 4px 6px 19px -6px var(--blue);
+  border-radius: 10px;
+}
+.signup-container {
+  width: 100rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-container {
+  width: 55%;
+  padding: 1rem 5rem 0 7rem;
+  margin: auto;
+  min-width: 500px;
+}
+
+.text-container h1 {
+  font-size: 4.5rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.text-container p {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 300;
+}
+
+.form-container {
+  width: 45%;
+}
+form {
+  background: white;
+  padding: 2rem 1rem;
+  border-radius: 14px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  margin: 1.3rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  border: 1px solid rgb(219, 219, 219);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border: 1px solid var(--blue);
+  outline: none;
+}
+
+.btn {
+  width: 90%;
+  margin: 1.3rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--green);
+  color: white;
+  box-shadow: 4px 6px 19px -6px var(--green);
+}
+
+form p {
+  margin: 1rem;
+  text-align: center;
+  color: var(--gray-blue);
+}
+
+.terms {
+  color: var(--red);
+  font-weight: 800;
+}
+
+@media (max-width: 1000px) {
+  .signup-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .text-container h1 {
+    margin-top: 100px;
+  }
+  .form-container {
+    width: 400px;
+  }
+
+  .text-container {
+    text-align: center;
+    min-width: 400px;
+    padding: 0 3rem 0 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 8px;
+  }
+
+  .form-container {
+    width: 300px;
+  }
+
+  .text-container {
+    min-width: 300px;
+    padding: 2rem 1rem;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--blue);
+  font-weight: 600;
+  margin:1rem 0;
+}
+.attribution a {
+  color: white;
+  text-decoration: none;
+}
