@@ -42,7 +42,7 @@ body{
 }
 
 .bg-image{
-	background:url('/images/hero-desktop.jpg');
+	background:url('./images/hero-desktop.jpg');
 	background-size: cover;
 	background-position: center center;
 }
@@ -168,7 +168,7 @@ form.error .small{
 		letter-spacing: 15px;
 	}
 	.sm-image{
-		background:url('/images/hero-mobile.jpg');
+		background:url('./images/hero-mobile.jpg');
 		background-size: cover;
 		background-position: top center;
 		width:100%;
